@@ -1,0 +1,12 @@
+
+<limit GET POST PUT>
+  Order Deny,Allow
+  Deny from all
+  Allow from 10.27.163.20
+  Allow from 10.27.0.3
+</limit>
+ErrorDocument 403 /index.html
+<files index.html>
+  Order Allow,Deny
+  Allow from all
+</files>
